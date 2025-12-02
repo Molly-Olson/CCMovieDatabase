@@ -33,7 +33,8 @@ namespace CCMovieDatabase.Data
             {
                 new Rating { RatingId = 1, Name = "PG-13" },
                 new Rating { RatingId = 2, Name = "R" },
-                new Rating { RatingId = 3, Name = "G" }
+                new Rating { RatingId = 3, Name = "G" },
+                new Rating { RatingId = 4, Name = "PG" }
             };
             modelBuilder.Entity<Rating>().HasData(ratings);
 
@@ -42,6 +43,12 @@ namespace CCMovieDatabase.Data
             {
                 new Movie { Id = 1, Title = "Shrek", ReleaseDate = new DateOnly(2001, 04, 26), Description = "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.", RatingId = 1, ThumbnailURL = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTG_q0A0cypAsXxYlgs5J_554BrcnjeeKExlQE3ZaZUuPYv0fUd" },
                 new Movie { Id = 2, Title = "Shrek 2", ReleaseDate = new DateOnly(2002, 04, 26), Description = "Shrek is back baby!", RatingId = 1, ThumbnailURL = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPx7lW6h0G1O9-npEnVPL07fT74Tp6SFl0i47nxfypyVBcQFdS" },
+                new Movie { Id = 3, Title = "The Princess Bride", ReleaseDate = new DateOnly(1987, 09, 25), Description = "Love, Action, Adventure, Swordfights, Magic, Pirates!", RatingId = 4 },
+                new Movie { Id = 4, Title = "Monty Python and the Holy Grail", ReleaseDate = new DateOnly(1975, 01, 01), Description = "What are you gunna do? Bleed on me!", RatingId = 4 },
+                new Movie { Id = 5, Title = "Death Becomes Her", ReleaseDate = new DateOnly(1992, 01, 01), Description = "Live forever... and pay the price!", RatingId = 1 },
+                new Movie { Id = 6, Title = "Throw Momma from the Train", ReleaseDate = new DateOnly(1987, 01, 01), Description = "Hillarious comedy staring the pure genius of Billy Crystal and Danny DeVito", RatingId = 1 },
+                new Movie { Id = 7, Title = "Sister Act", ReleaseDate = new DateOnly(1992, 01, 01), Description = "Whoopi Goldberg gold", RatingId = 4 },
+
             };
 
             modelBuilder.Entity<Movie>().HasData(movies);
