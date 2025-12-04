@@ -19,7 +19,14 @@
 
                     <div class="card-body">
                         <h5 class="card-title"> @item.Title</h5>
-                        <p class="card-text">Ok riddle me this Batman... How can I get actors here?</p>
+                        <p class="card-text">
+                            @foreach (var character in item.Characters)
+                            {
+                                @character.Name <br />
+                                @character.Description  <br /><br />
+                            }
+
+                        </p>
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">
                             Movie Details
                         </a>

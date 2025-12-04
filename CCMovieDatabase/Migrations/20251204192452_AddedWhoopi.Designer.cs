@@ -4,6 +4,7 @@ using CCMovieDatabase.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CCMovieDatabase.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    partial class MovieContextModelSnapshot : ModelSnapshot
+    [Migration("20251204192452_AddedWhoopi")]
+    partial class AddedWhoopi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -213,91 +216,7 @@ namespace CCMovieDatabase.Migrations
                             CharacterId = 3,
                             Description = "Fast talking Vegas Showgirl hides from danger with her 'sisters' and they all learn from eachother.",
                             MovieId = 7,
-                            Name = "Deloris played by Whoopi Goldberg"
-                        },
-                        new
-                        {
-                            CharacterId = 4,
-                            Description = "The no-nonsense head of the convent who helps Deloris find her way.",
-                            MovieId = 7,
-                            Name = "Mother Superior played by Maggie Smith"
-                        },
-                        new
-                        {
-                            CharacterId = 5,
-                            Description = "A yes mama kind of man who has had enough of his mama.",
-                            MovieId = 6,
-                            Name = "Owen Lift played by Danny DeVito"
-                        },
-                        new
-                        {
-                            CharacterId = 6,
-                            Description = "He unwittingly agrees to a murder swap",
-                            MovieId = 6,
-                            Name = "Larry Donner played by Billy Crystal"
-                        },
-                        new
-                        {
-                            CharacterId = 7,
-                            Description = "A self absorbed actress obsessed with appearance and the fountain of youth",
-                            MovieId = 5,
-                            Name = "Madeline Ashton played by the unforgettable Meryl Streep"
-                        },
-                        new
-                        {
-                            CharacterId = 8,
-                            Description = "Heartbroken and overweight, she stumbles upon a secret that changes EVERYTHING, but is it for the better?",
-                            MovieId = 5,
-                            Name = "Helen Sharp played Goldie Hawn"
-                        },
-                        new
-                        {
-                            CharacterId = 9,
-                            Description = "Plastic surgeon turned undertaker trapped in a loveless marriage after betrying his true love.",
-                            MovieId = 5,
-                            Name = "Ernest Menville played by Bruce Willis"
-                        },
-                        new
-                        {
-                            CharacterId = 10,
-                            Description = "He saves the day by avoiding the silly place of Camelot and knowing the difference between an African and a European swallow. Very important distinction.",
-                            MovieId = 4,
-                            Name = "Second Swallow-Savvy Guard played by John Cleese"
-                        },
-                        new
-                        {
-                            CharacterId = 11,
-                            Description = "Bring out your dead! He'll help ya out if they aren't in fact dead yet... and what's with that lady and her poor cat?!",
-                            MovieId = 4,
-                            Name = "Dead Collector played by Eric Idle"
-                        },
-                        new
-                        {
-                            CharacterId = 12,
-                            Description = "A knight of the round table who uses science and logic to prove the existence of the holy grail.",
-                            MovieId = 4,
-                            Name = "Sir Bedevere the Wise played by Terry Jones"
-                        },
-                        new
-                        {
-                            CharacterId = 13,
-                            Description = "You killed my father. Prepare to die. A skilled swordsman on a quest for revenge.",
-                            MovieId = 3,
-                            Name = "Inigo Montoya played by Mandy Patinkin"
-                        },
-                        new
-                        {
-                            CharacterId = 14,
-                            Description = "A gentle giant with a big heart and even bigger strength, he helps Inigo on his quest.",
-                            MovieId = 3,
-                            Name = "Fezzik played by Andre the Giant"
-                        },
-                        new
-                        {
-                            CharacterId = 15,
-                            Description = "A cunning Sicilian criminal mastermind known for his wit and intellect.",
-                            MovieId = 3,
-                            Name = "Vizzini played by Wallace Shawn"
+                            Name = "Deloris"
                         });
                 });
 
